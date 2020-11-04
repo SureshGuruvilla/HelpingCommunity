@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/news-feed-rightpane.css">
 </head>
 <body>
+    
     <div class="fluid-container">
         <div class="row">
             <div id="leftpane" class="leftpane d-none d-xl-block d-lg-block col-xl-2 col-lg-2">
@@ -51,12 +52,27 @@
                 </div>
               </div>
               <div class="middlepane col-sm-12 col-md-12 col-lg-6 col-xl-6" >
+                <div class="row">
+                    <a id="nav-menu-icon" href="javascript:void(0);" class="icon hamburgen-icon d-lg-none" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a><br/>
+                </div>
+                <div class="row">
+                    <div id="myTopnav" class = "myTopnav d-lg-none">
+                        <a href = "#">Home</a>
+                        <a href = "#">About</a>
+                        <a href = "#">Tutorials</a>
+                        <a href = "#">About</a>
+                        <a href = "#">Tutorials</a>
+                     </div>
+                </div>
                 <div class="search-field">
                     <form action="">
                         <input type="text" placeholder="Search Anything here">
                         <button><i class="fa fa-search" style="color: grey;"></i></button>
                     </form>
                 </div>
+                
                 <div class="newsfeed-head">
                     <div class="profile-field">
                         <img src="images/dp.jpg" alt="Profile Photo">
@@ -291,6 +307,15 @@
         $(document).ready(function() {
             document.getElementById("newsFeed").style.color = "#115af5";
         } );
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if(x.style.display == "none"){
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "none";
+            }
+        }
     </script>
 </body>
 </html>
