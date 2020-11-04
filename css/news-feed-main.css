@@ -26,6 +26,7 @@ body, html {
     height: 100vh;
   }
   .leftpane {
+      position: sticky;
       width: 100%;
       height: 100vh;
       float: left;
