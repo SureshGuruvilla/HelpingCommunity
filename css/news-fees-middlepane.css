@@ -131,10 +131,15 @@
     text-justify: inter-word;
 }
 .hamburgen-icon{
+    width: 100%;
+    text-align: right;
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+.hamburgen-icon .icon{
+    width: 1rem;
+    color: black;
     float: right;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    display: block;
 }
 .myTopnav {
     display: none;
