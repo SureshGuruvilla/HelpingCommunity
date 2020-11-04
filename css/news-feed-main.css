@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+:root {
+  --primary-color: #115af5;
+  --text-color: #555555;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+  }
+  .middlepane::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  /* ::-webkit-scrollbar-thumb {
+      background: #FF0000;
+  } */
+  .fluid-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .leftpane {
+      width: 100%;
+      height: 100vh;
+      float: left;
+      background-image: linear-gradient(to right,#f6f9fc, #ecf2f8);
+      border-collapse: collapse;
+  }
+  .middlepane {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 100vh;
+      float: left;
+      border-collapse: collapse;
+      /* background-color: red; */
+      background-color: #fafdff;
+      overflow: hidden;
+  }
+  
+  .rightpane {
+    padding-right: 5%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    float: right;
+    /* background-color: turquoise; */
+    background-color: #fafcff;
+    border-collapse: collapse;
+  }
+  .wrapper{
+    margin-left: 1.5rem;
+  }
+  .blue-heading{
+    color: var(--primary-color);
+  }
+  .blue-heading:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
