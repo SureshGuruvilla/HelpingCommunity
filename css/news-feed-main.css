@@ -41,7 +41,7 @@ body, html {
       border-collapse: collapse;
       /* background-color: red; */
       background-color: #fafdff;
-      overflow: hidden;
+      overflow: scroll;
   }
   
   .rightpane {
